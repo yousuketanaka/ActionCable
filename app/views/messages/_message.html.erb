@@ -1,0 +1,17 @@
+<div class="panel">
+	<div class="panel-body">
+		<div class="row">
+			<div class="col-md-2">
+				<%= gravatar_image_tag(message.user.email) %>
+			</div>
+			<div class="col-md-10">
+				<strong><%= message.user.name %></strong>
+				<span class="pull-right"><%= message.message_time %></span>
+				<br>
+				<div class="row-space-2">
+					<%= message.context %>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
